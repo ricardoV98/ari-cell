@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const AriCellApp());
+}
+
+class AriCellApp extends StatelessWidget {
+  const AriCellApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Ari Cell',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Ari Cell'),
+          centerTitle: true,
+        ),
+        body: const Center(
+          child: Text(
+            'Ari Cell funcionando ✅',
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
